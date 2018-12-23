@@ -10,7 +10,6 @@
         }
     </style>
 </head>
-
 <body>
     <div style="margin-left:400px">
         <div style="border:1px solid;width: 600px;height: 500px;">
@@ -36,10 +35,10 @@
     })
 
     function link() {
-        ws = new WebSocket("ws://192.168.75.101:9501");//连接服务器
+        ws = new WebSocket("ws://192.168.75.101:9502");//连接服务器
         ws.onopen = function (event) {
             console.log(event);
-            alert(event);
+            //alert(event);
         };
         ws.onmessage = function (event) {
             console.log(event);
